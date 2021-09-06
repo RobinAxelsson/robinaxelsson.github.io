@@ -1,0 +1,1 @@
+En typ av verktyg som gör att man enkelt kan hålla koll på ändringar i kod, men där finns inget som hindra att allt i princip kan sparas i ett versions kontroll system.

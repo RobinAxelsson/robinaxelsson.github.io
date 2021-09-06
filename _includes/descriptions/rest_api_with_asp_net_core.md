@@ -1,0 +1,1 @@
+Med ASP.NET Core kan man blant annat bygga REST APIer.

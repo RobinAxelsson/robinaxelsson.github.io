@@ -1,0 +1,14 @@
+---
+contentTimeTotal:
+  literatureTime: 28
+  optionalLiteratureTime: 0
+notInTopic:
+  literature:
+  - title: "Introduction to Azure security - Microsoft Docs"
+    url: https://docs.microsoft.com/en-us/azure/security/fundamentals/overview
+    timeType: Article
+    timeMinutes: 28
+    timeBadge: info
+    description: >
+      Introduce yourself to Azure Security, its various services, and how it works by reading this overview.
+topics:

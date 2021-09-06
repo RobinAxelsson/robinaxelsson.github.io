@@ -1,0 +1,14 @@
+---
+contentTimeTotal:
+  literatureTime: 0
+  optionalLiteratureTime: 0
+notInTopic:
+  literature:
+  - title: "Scaling Up vs. Scaling Out: What’s the Difference?"
+    url: https://pagely.com/blog/scaling-up-vs-scaling-out/
+    timeType: Article
+    timeMinutes: 0
+    timeBadge: dark
+    description: >
+      Whether you’re running a single WordPress site or a million, you’ve likely come across this question at least once: how do I scale as I grow? It’s a tough question […]
+topics:

@@ -1,0 +1,378 @@
+course: 
+  name: "Utveckling av molnbaserade applikationer - Göteborg"
+  courseId: e08a642b-0f35-4837-ad6b-4a67b8ee2790
+weeks:
+- week: 36
+  year: 2021
+  description: Fundament för att förstå molnet
+  days:
+  - day: 2021-09-06
+    weekday: "Måndag"
+    activities:
+    - activity: lecture
+      title: "Introduktion"
+      titleEn: "Introduction"
+      slug: cloud-lectures/introduction
+      filename: Untitled
+      dirname: untitled-lecture
+      description: "Start på Utveckling av molnbaserade applikationer"
+      start-full: 20210906T083000
+      end-full: 20210906T091500
+    - activity: lecture
+      title: "Repetition av webbackend"
+      titleEn: "Run-through of webbackend"
+      slug: cloud-lectures/introduction
+      filename: Untitled
+      dirname: untitled-lecture
+      description: "Vad var det vi gjorde innan sommaran"
+      start-full: 20210906T093000
+      end-full: 20210906T110000
+    - activity: lecture
+      title: "Internet och moln"
+      titleEn: "Internet och moln"
+      number: "1"
+      slug: cloud-lectures/introduction
+      filename: Untitled
+      dirname: untitled-lecture
+      description: "Vad är internet och hur funkar det?"
+      start-full: 20210906T111500
+      end-full: 20210906T123000
+    - activity: standup
+      title: "Avslutning på dagen"
+      titleEn: "Get together and end of day"
+      slug: cloud-lectures/introduction
+      description: "Är där frågor? Landing."
+      start-full: 20210906T160000
+      end-full: 20210906T163000
+  - day: 2021-09-07
+    weekday: "Tisdag"
+    activities: null
+  - day: 2021-09-08
+    weekday: "Onsdag"
+    activities:
+    - activity: standup
+      title: "Återkoppling till Internet och moln"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20210908T083000
+      end-full: 20210908T090000
+    - activity: lecture
+      title: "Automatisering av bygg och release"
+      titleEn: "Automatisering av bygg och release"
+      slug: cloud-lectures/ci
+      description: "Molnet kan använns till att hjälpa oss utvecklare med att säkerställa vår bygg och release av vår kod"
+      start-full: 20210908T090000
+      end-full: 20210908T094500
+      number: "2"
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20210908T160000
+      end-full: 20210908T163000
+  - day: 2021-09-09
+    weekday: "Torsdag"
+    activities: null
+  - day: 2021-09-10
+    weekday: "Fredag"
+    activities: null
+- week: 37
+  year: 2021
+  description: Dom första byggstenar i en molnapplikation
+  days:
+  - day: 2021-09-13
+    weekday: "Måndag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Automatisering av bygg och release"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20210913T083000
+      end-full: 20210913T090000
+    - activity: lecture
+      title: "Containrar och orkestrering"
+      titleEn: "Containers and orchestration"
+      slug: cloud-lectures/containers
+      description: "Containrar har blivet det nya sättet att jobba med applikation i molnet, orkestrering använns till att kontrollera hur dom körs"
+      start-full: 20210913T090000
+      end-full: 20210913T094500
+      number: "3"
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20210913T160000
+      end-full: 20210913T163000
+  - day: 2021-09-14
+    weekday: "Tisdag"
+    activities: null
+  - day: 2021-09-15
+    weekday: "Onsdag"
+    activities:
+    - activity: standup
+      title: "Återkopling från Containrar"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20210915T083000
+      end-full: 20210915T090000
+    - activity: lecture
+      title: "Serverless"
+      titleEn: "Serverless"
+      number: "4"
+      slug: cloud-lectures/serverless
+      description: "Serveless kör det möjligt att köra kod i molnet utan att tänka servere"
+      start-full: 20210915T083000
+      end-full: 20210915T093000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20210915T160000
+      end-full: 20210915T163000
+  - day: 2021-09-16
+    weekday: "Torsdag"
+    activities: null
+  - day: 2021-09-17
+    weekday: "Fredag"
+- week: 38
+  year: 2021
+  description: Data och webb i molnet
+  days:
+  - day: 2021-09-20
+    weekday: "Måndag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Orkestrering"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20210920T083000
+      end-full: 20210920T090000
+    - activity: lecture
+      title: "Databaser i molnet"
+      titleEn: "Databases in the cloud"
+      number: "5"
+      slug: cloud-lectures/databases
+      description: "Molnet gör det enkelt att jobba med databaser"
+      start-full: 20210920T090000
+      end-full: 20210920T093000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20210920T160000
+      end-full: 20210920T163000
+  - day: 2021-09-21
+    weekday: "Tisdag"
+    activities: null
+  - day: 2021-09-22
+    weekday: "Onsdag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Databaser i molnet"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20210922T083000
+      end-full: 20210922T090000
+    - activity: lecture
+      title: "Webb applikationer i molnet"
+      titleEn: "Webapplications in the cloud"
+      number: "6"
+      slug: cloud-lectures/webapplications
+      description: "Molnet är byggd till at köra webbapplikationer"
+      start-full: 20210922T090000
+      end-full: 20210922T093000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20210922T160000
+      end-full: 20210922T163000
+  - day: 2021-09-23
+    weekday: "Torsdag"
+    lecture: null
+  - day: 2021-09-24
+    weekday: "Fredag"
+    lecture: null
+- week: 39
+  year: 2021
+  description: "Nätverk och filer i molnet"
+  days:
+  - day: 2021-09-27
+    weekday: "Måndag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Webb applikationer i molnet"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20210927T083000
+      end-full: 20210927T090000
+    - activity: lecture
+      title: "Nätverk i molnet"
+      titleEn: "Cloud networking"
+      number: "7"
+      slug: cloud-lectures/network
+      description: "I molnet är det möjligt att bygga upp virtuella netvärk som kan vara ett viktigt verktyg för utveklarer"
+      start-full: 20210927T083000
+      end-full: 20210927T095000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20210927T160000
+      end-full: 20210927T163000
+  - day: 2021-09-28
+    weekday: "Tisdag"
+    activities: null
+  - day: 2021-09-29
+    weekday: "Onsdag"
+    activities: 
+    - activity: standup
+      title: "Återkopling till Nätverk i molnet"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20210929T083000
+      end-full: 20210929T090000
+    - activity: lecture
+      title: "Filer i molnet"
+      titleEn: "Files in the cloud"
+      number: "8"
+      slug: cloud-lectures/files
+      description: "Stora datamängder kan uppbevaras i molnet med olika lösningar"
+      start-full: 20210929T083000
+      end-full: 20210929T093000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20210929T160000
+      end-full: 20210929T163000
+  - day: 2021-09-30
+    weekday: "Torsdag"
+    lecture: null
+  - day: 2021-10-01
+    weekday: "Fredag"
+    lecture: null
+- week: 40
+  year: 2021
+  description: Avancerede moln tekniker
+  days:
+  - day: 2021-10-04
+    weekday: "Måndag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Filer i molnet"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20211004T083000
+      end-full: 20211004T090000
+    - activity: lecture
+      title: "Monitorering av moln applikationer"
+      titleEn: "Monitoring of cloud applications"
+      number: "9"
+      slug: cloud-lectures/monitoring
+      description: "Monitorering är viktigt för att vi kan hålla koll på vår moln applikation"
+      start-full: 20211004T090000
+      end-full: 20211004T160000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20211004T160000
+      end-full: 20211004T163000
+  - day: 2021-10-05
+    weekday: "Tisdag"
+    activities: null
+  - day: 2021-10-06
+    weekday: "Onsdag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Monitorering av moln applikationer"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20211006T083000
+      end-full: 20211006T090000
+    - activity: lecture
+      title: "Skalning, upp och ut"
+      titleEn: "Scaling in and out"
+      number: "10"
+      slug: cloud-lectures/scaling
+      description: "Molnet gör det möjligt att ändra server kapciteten när det behövs"
+      start-full: 20211006T090000
+      end-full: 20211006T160000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20211006T160000
+      end-full: 20211006T163000
+  - day: 2021-10-07
+    weekday: "Torsdag"
+    activities: null
+  - day: 2021-10-08
+    weekday: "Fredag"
+    activities: null
+- week: 41
+  year: 2021
+  description: Säkerhet och livscykel
+  days:
+  - day: 2021-10-11
+    weekday: "Måndag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Skalning, upp och ut"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20211011T083000
+      end-full: 20211011T090000
+    - activity: lecture
+      title: "Molnsäkerhetsfunktioner"
+      titleEn: "Cloud security functionality"
+      description: "Där finns fler olika funktioner som kan hjälpa skydda vår applikation molnet"
+      slug: cloud-lectures/security
+      start-full: 20211011T083000
+      end-full: 20211011T093000
+      number: "11"
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20211011T160000
+      end-full: 20211011T163000
+  - day: 2021-10-12
+    weekday: "Tisdag"
+    activities: null
+  - day: 2021-10-13
+    weekday: "Onsdag"
+    activities:
+    - activity: standup
+      title: "Återkopling till Moln säkerhet"
+      titleEn: "Get together and start of day"
+      description: "Är där frågor sen förra lektion? Boarding card"
+      start-full: 20211013T083000
+      end-full: 20211013T090000
+    - activity: lecture
+      title: "Moln-livscykel och miljöpåverkning"
+      titleEn: "Lifecycle for cloud applications and enviromental effects"
+      number: "12"
+      slug: cloud-lectures/lifecycle
+      description: "Hur lever vår applikation i molnet och vad kan man gör åt miljöpåverkan"
+      start-full: 20211013T090000
+      end-full: 20211013T160000
+    - activity: standup
+      title: "Sammanfattning på dagens lektion"
+      titleEn: "Summary of the lecture of the day"
+      description: "Är där frågor? Landing."
+      start-full: 20211013T160000
+      end-full: 20211013T163000
+  - day: 2021-10-14
+    weekday: "Torsdag"
+    activities: null
+  - day: 2021-10-15
+    weekday: "Fredag"
+    activities:
+    - activity: exam
+      title: "Tenta uppgift"
+      titleEn: "Exam"
+      description: "Deadline 2021-10-15 kl 13:00"
+      start-full: 20211015T083000
+      end-full: 20211015T093000

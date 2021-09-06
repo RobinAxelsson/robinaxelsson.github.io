@@ -1,0 +1,1 @@
+Azure är ett moln-produkt, och det som vi kommer använda som praktisk eksempel i denna kurs.

@@ -1,0 +1,1 @@
+MVC är ett pattern som bl.a. använns till att bygga web applikationer.

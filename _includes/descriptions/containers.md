@@ -1,0 +1,1 @@
+Ett sätt att paketere en applikation

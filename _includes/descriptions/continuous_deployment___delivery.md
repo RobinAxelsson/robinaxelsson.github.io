@@ -1,0 +1,1 @@
+Övningen att levera mjukvaru direkt till en server, med eller utan ett manuellt godkännade

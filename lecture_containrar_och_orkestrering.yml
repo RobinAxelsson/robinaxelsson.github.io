@@ -1,0 +1,234 @@
+---
+contentTimeTotal:
+  literatureTime: 64
+  optionalLiteratureTime: 0
+topics:
+  - topic: "Containers"
+    literatureTime: 0
+    optionalLiteratureTime: 0
+    description-include: containers.md
+    literature:
+    - title: "WTF is a container?"
+      url: https://techcrunch.com/2016/10/16/wtf-is-a-container
+      description: >
+        Microsoft, Google, Amazon and everybody else seems to have jumped on this bandwagon in the last year or so, but why is everybody so excited about this stuff? To understand why containers are such a big deal, let’s think about physical containers for a moment. The modern shipping industry only works as well as it does […]
+    - title: "Why you should care about containers"
+      url: https://youtube.com/watch?v=EUitQ8DaZW8
+      description: >
+        Understand how containers provide a lightweight immutable infrastructure for application deployment and more efficient utilization of underlying resources in this video of why containers matter. 
+        
+        Learn more: https://aka.ms/k8slearning
+    optionalLiterature:
+    - title: "5 Container Alternatives to Docker"
+      url: https://containerjournal.com/topics/container-ecosystems/5-container-alternatives-to-docker
+      description: >
+        Docker surely gets a lot of attention. But Docker is not the only container option out there. Here are some of the alternatives to Docker.
+    - title: "OS-level virtualization"
+      url: https://en.wikipedia.org/wiki/OS-level_virtualization
+      timeType: Wiki
+      timeMinutes: 0
+      timeBadge: dark
+  - topic: "Docker"
+    literatureTime: 32
+    optionalLiteratureTime: 0
+    description-include: docker.md
+    literature:
+    - title: "Containers? So What? Docker 101 Explained"
+      url: https://youtube.com/watch?v=0oEsMwSxBsk
+      timeType: Video
+      timeMinutes: 32
+      timeBadge: danger
+      description: >
+        Containers are confusing. They are a buzzword that everyone is saying but no one understands. Why use them? Why are they better than virtual machines? How are they different than just using a machine regularly? Let's build a Dockerfile FROM Scratch and built it up to an Nginx webserver and finally a multistage Dockerfile with building, testing, and running, in production, in just 30 min!
+        
+        00:00 Introduction
+        01:25 Hello World in C
+        03:30 Draw.io diagram
+        05:00 Your app
+        06:12 Hypervisors
+        08:25 Completed Draw.io diagram
+        09:00 Dockerfile from Scratch
+        10:12 Docker Build and tag
+        12:12 busybox and base images
+        14:00 Running an image
+        15:22 What's Inside?
+        16:27 From Ubuntu
+        17:00 Layers
+        18:45 A more complex example
+        20:20 Nginx
+        24:25 My .NET podcast site in Docker
+        27:10 Why containers are amazing
+        27:45 Size of images
+        28:55 Final Diagram
+        30:00 Conclusion
+    - title: "What is Docker, Why use it? - Docker and .NET Core 101 [1 of 3]"
+      url: https://youtube.com/watch?list=PLdo4fOcmZ0oUvXP_Pt2zOgk8dTWagGs_P&v=vmnvOITMoIg
+      description: >
+        Why use containers? Docker is a way to package and distribute your applications with all its dependencies. It works on my machine, your machine and their machine. 
+        
+        Follow Shayne Boyer on Twitter: https://twitter.com/spboyer
+        
+        Watch the entire series here: https://aka.ms/dotnet3-docker
+        Download Visual Studio 2019 here: https://aka.ms/VisualStudio-dotnetconf19
+        Download .NET Core 3.0 here: https://aka.ms/Dotnet3
+        
+        Learn more about .NET and Docker:
+        Introduction to .NET and Docker: https://docs.microsoft.com/en-us/dotnet/core/docker/introduction?&WT.mc_id=Educationcontainers-c9-shyboyer
+        Containerize a .NET Core App: https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?&WT.mc_id=Educationcontainers-c9-shyboyer
+        Container Tools in Visual Studio: https://docs.microsoft.com/en-us/visualstudio/containers/overview?view=vs-2019&WT.mc_id=Educationcontainers-c9-shyboyer
+        
+        Follow us:
+        Twitter: https://twitter.com/dotnet
+        Facebook: https://www.facebook.com/Dotnet/
+        Blogs: https://devblogs.microsoft.com/dotnet/?WT.mc_id=Educationcontainers-c9-shyboyer
+        Shows and Podcasts: https://channel9.msdn.com/Shows/On-NET/?WT.mc_id=Educationcontainers-c9-shyboyer
+        
+        Useful Links: 
+        Get your questions answered on the Microsoft Q&A for .NET - http://aka.ms/dotnet-qa​
+        Learn .NET with free self-guided learning from Microsoft Learn: http://aka.ms/learndotnet
+        Learn .NET: https://dotnet.microsoft.com/learn?WT.mc_id=Educationcontainers-c9-shyboyer
+        .NET Community: https://dotnet.microsoft.com/platform/community?WT.mc_id=Educationcontainers-c9-shyboyer
+        .NET Documentation: https://docs.microsoft.com/en-us/dotnet/?WT.mc_id=Educationcontainers-c9-shyboyer
+    - title: "Docker Tooling in Visual Studio - Docker and .NET Core 101 [2 of 3]"
+      url: https://youtube.com/watch?list=PLdo4fOcmZ0oUvXP_Pt2zOgk8dTWagGs_P&v=k2sskhYEPkI
+      description: >
+        Visual Studio has always had a great set of tools to accomplish any task. See how the Docker tooling helps us containerize your apps fast with a few clicks. 
+        
+        Follow Shayne Boyer on Twitter: https://twitter.com/spboyer
+        
+        Watch the entire series here: https://aka.ms/dotnet3-docker
+        Download Visual Studio 2019 here: https://aka.ms/VisualStudio-dotnetconf19
+        Download .NET Core 3.0 here: https://aka.ms/Dotnet3
+        
+        Learn more about .NET and Docker:
+        Container Tools in Visual Studio: https://docs.microsoft.com/en-us/visualstudio/containers/overview?view=vs-2019&WT.mc_id=Educationcontainers-c9-shyboyer
+        Containerize a .NET Core App: https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?&WT.mc_id=Educationcontainers-c9-shyboyer
+        Introduction to .NET and Docker: https://docs.microsoft.com/en-us/dotnet/core/docker/introduction?&WT.mc_id=Educationcontainers-c9-shyboyer
+        
+        Follow us:
+        Twitter: https://twitter.com/dotnet
+        Facebook: https://www.facebook.com/Dotnet/
+        Blogs: https://devblogs.microsoft.com/dotnet/?WT.mc_id=Educationcontainers-c9-shyboyer
+        Shows and Podcasts: https://channel9.msdn.com/Shows/On-NET/?WT.mc_id=Educationcontainers-c9-shyboyer
+        
+        Useful Links: 
+        Get your questions answered on the Microsoft Q&A for .NET - http://aka.ms/dotnet-qa​
+        Learn .NET with free self-guided learning from Microsoft Learn: http://aka.ms/learndotnet
+        Learn .NET: https://dotnet.microsoft.com/learn?WT.mc_id=Educationcontainers-c9-shyboyer
+        .NET Community: https://dotnet.microsoft.com/platform/community?WT.mc_id=Educationcontainers-c9-shyboyer
+        .NET Documentation: https://docs.microsoft.com/en-us/dotnet/?WT.mc_id=Educationcontainers-c9-shyboyer
+    - title: "What Exactly is Docker?"
+      url: https://medium.com/swlh/what-exactly-is-docker-1dd62e1fde38
+      description: >
+        An introduction to containers and Docker, including real-life examples and suggestions for complete software development lifecycle.
+    - title: "A quick introduction to Docker tags"
+      url: https://www.freecodecamp.org/news/an-introduction-to-docker-tags-9b5395636c2a/
+      description: >
+        If you’ve worked with Docker even for a little while, I bet you’ve come across tags. They often look like “my_image_name:1” where the part after the colon is known as a tag. The tag is not always specified when tagging images, but we’ll get
+    optionalLiterature:
+    - title: "Virtual Machines vs Docker Containers - Dive Into Docker"
+      url: https://youtube.com/watch?v=TvnZTi_gaNc
+      description: >
+        Watch the complete course at: https://diveintodocker.com/?utm_source=nj&utm_medium=youtube&utm_campaign=virtual-machines-vs-docker-containers
+        
+        Hit the subscribe button to receive more videos like this!
+        
+        Dive Into Docker is a complete course that's packed with examples and best practices. It was carefully crafted to take you from "What is Docker?" to happily Dockerizing your own applications with total confidence.
+        
+        You are watching video #5 of the free preview.
+        
+        ---
+        
+        By the way, I know that I mentioned VMware is a Type 2 hypervisor at some point in this video. That was in the context of comparing VMware Player / Workstation / Fusion to VirtualBox, in which case VMware Player / Workstation / Fusion and VirtualBox are all Type 2 hypervisors. I do know VMWare has other products which are Type 1 hypervisors. Next time I'll be more precise with my words. :)
+        
+        ---
+        
+        Personal Website: https://nickjanetakis.com
+        Twitter: https://twitter.com/nickjanetakis
+        GitHub: https://github.com/nickjj
+    - title: "A Docker Tutorial for Beginners"
+      url: https://docker-curriculum.com
+      description: >
+        Learn to build and deploy your distributed applications easily to the cloud with Docker
+    - title: "Introduction to Containerization Using Docker"
+      url: https://codemag.com/Article/2103061/Introduction-to-Containerization-Using-Docker
+      description: >
+        Wei-Meng explains how Docker Engine replaces virtual machines with containers to host the apps and libraries you need, completely independent of which O...
+    - title: "Using volumes in Docker Compose"
+      url: https://devopsheaven.com/docker/docker-compose/volumes/2018/01/16/volumes-in-docker-compose.html
+      description: >
+        Learn how to declare internal, external, named and host-mounted Docker volumes with these easy Docker Compose examples.
+    - title: "GitHub - 100daysofdevops/21_Days_of_Docker"
+      url: https://github.com/100daysofdevops/21_Days_of_Docker
+      description: >
+        Contribute to 100daysofdevops/21_Days_of_Docker development by creating an account on GitHub.
+  - topic: "Orkestrering"
+    literatureTime: 32
+    optionalLiteratureTime: 0
+    description-include: orkestrering.md
+    literature:
+    - title: "Kubernetes and Container Orchestration 101"
+      url: https://youtube.com/watch?v=3RTvoI-A7UQ
+      timeType: Video
+      timeMinutes: 32
+      timeBadge: danger
+      description: >
+        We've learned about docker and containers, we've seen how they can do one thing well. What happens if they are connected and work together? How do we move from one container to n containers? Why is this useful? This 30 min, clear no-cut video will get you what you need to know to start your Kubernetes journey...or not.
+        
+        00:00 Introduction
+        01:42 Orchestra analogy
+        03:18 Docker Run Demo
+        04:30 Diagraming
+        09:00 Enabling k8s in Docker Desktop
+        10:43 Writing Yaml
+        13:25 Creating a Pod
+        15:00 Lots of Pods
+        17:45 Talking to Pods
+        20:00 Exposing Hello World
+        22:20 Seeing all Containers
+        24:37 Kubectl Proxy
+        25:51 Hello World in browser
+        28:00 Port Forwarding
+        29:30 Final Diagram
+        30:48 Conclusion
+    - title: "What Is Container Orchestration?"
+      url: https://newrelic.com/blog/best-practices/container-orchestration-explained
+      description: >
+        Provisioning, scheduling, and managing containers at scale—here are the hows and whys of container orchestration.
+    optionalLiterature:
+    - title: "Cloud Native .NET - Mark Rendle"
+      url: https://youtube.com/watch?v=77Dk3vjVa9k
+      description: >
+        Cloud Native applications are “containerized, dynamically orchestrated, and microservice-oriented”. In this talk I’ll explain what all that means, why you’ll want to do it, and how to get started, including a look at the current state of technology and tools that support cloud native computing.
+        
+        We’ll look at running .NET Core applications in Docker; orchestration and scheduling with Kubernetes; designing and building microservice architectures; and maintaining and monitoring applications in production.
+        
+        
+        
+        NDC Conferences
+        https://ndcminnesota.com
+        https://ndcconferences.com
+  - topic: "Kubernetes"
+    literatureTime: 0
+    optionalLiteratureTime: 0
+    description-include: kubernetes.md
+    literature:
+    - title: "What is Kubernetes?"
+      url: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes
+      description: >
+        Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.
+    - title: "How Kubernetes works"
+      url: https://youtube.com/watch?v=daVUONZqn88
+      description: >
+        Learn about the key concepts in Kubernetes, including pod, deployment, replica set, scheduler and load balancer. 
+        
+        Learn more: https://aka.ms/k8slearning
+    optionalLiterature:
+    - title: "A Kubernetes story: Phippy goes to the zoo"
+      url: https://youtube.com/watch?v=R9-SOzep73w
+      description: >
+        Join Phippy on this animated adventure, as she takes her niece on an educational trip to the Kubernetes Zoo and learns about ingresses, CronJobs, CRDs, and more! 
+        
+        Learn more: https://aka.ms/k8slearning
+        
+        Phippy and friends were conceived by Matt Butcher, Karen Chu, and Bailey Beougher and are licensed by the CNCF under the CC-BY license.  More info at phippy.io.

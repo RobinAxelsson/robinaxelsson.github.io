@@ -1,0 +1,11 @@
+---
+contentTimeTotal:
+  literatureTime: 0
+  optionalLiteratureTime: 0
+notInTopic:
+  literature:
+  - title: "A quick introduction to Docker tags"
+    url: https://www.freecodecamp.org/news/an-introduction-to-docker-tags-9b5395636c2a/
+    description: >
+      If you’ve worked with Docker even for a little while, I bet you’ve come across tags. They often look like “my_image_name:1” where the part after the colon is known as a tag. The tag is not always specified when tagging images, but we’ll get
+topics:

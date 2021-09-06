@@ -1,0 +1,1 @@
+ASP.NET SignalR är ett verktyg till ASP.NET utvecklare som gör det enkelt att lägga  real-time funktionalitet till en webbapplikation.

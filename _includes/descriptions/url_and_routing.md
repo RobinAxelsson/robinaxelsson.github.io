@@ -1,0 +1,1 @@
+Innom specielt REST är det viktigt att man har en bra URL struktur och en idee om hur man jobbar med sin URL

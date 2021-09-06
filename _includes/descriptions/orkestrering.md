@@ -1,0 +1,1 @@
+En teknik som gör det möjligt att hålla koll på fler samtidiga containere som utgör ett system. Orkestring använns till att styra när en container ska köra, vilken version som ska köra och hur många instanser som ska köra.

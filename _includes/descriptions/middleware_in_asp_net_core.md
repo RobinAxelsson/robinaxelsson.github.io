@@ -1,0 +1,1 @@
+Middleware är en progamkod som köras innan (eller efter) en annan program kod, dom tar ett input från Middlewaret innan och lämnar output till middlewaret innan. Så att alla middlewares sitter i serie med varandra.

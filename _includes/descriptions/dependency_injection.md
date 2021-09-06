@@ -1,0 +1,1 @@
+Dependency Injection (DI) är en teknik som gör det enklare att jobba med Dependency Inversion Principle (DIP), gennom att man på ett ramverk definiere/konfigurera hur DI systemet ska handtera beroede i vår kod.
