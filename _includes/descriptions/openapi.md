@@ -1,1 +1,0 @@
-OpenApi är en standard till att beskriva ett REST API. 

@@ -1,1 +1,0 @@
-Dom stora drag vi behöver att kunne göra för att beslutta hur en applikation ska byggas, vilka dela ska den bestå av.

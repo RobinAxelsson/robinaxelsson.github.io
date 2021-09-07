@@ -1,1 +1,0 @@
-ASP.NET Core är ett ramverk gjort av Microsoft till att bygga webb applikation i .NET 

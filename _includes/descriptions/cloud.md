@@ -1,1 +1,0 @@
-Molnet eller The Cloud, är en och samma sak i denna kurs. Men vad är det?

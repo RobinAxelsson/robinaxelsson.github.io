@@ -1,1 +1,0 @@
-Session state relies on a cookie identifier to identify a particular browser session, and stores data related to the session on the server.

@@ -1,1 +1,0 @@
-Blazor ingår **inte** som en del av denna kurs, men det kan ändå vara bra att veta vad teknologin handlar om.

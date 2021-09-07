@@ -1,1 +1,0 @@
-Övningen att automatisk bygga vår kod och köra olika kontroller som enhetstestar och där igenom säkkerställa att vi upfyllar vissa krav.

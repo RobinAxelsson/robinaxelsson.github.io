@@ -1,1 +1,0 @@
-Vi måste tänka säkerhet från dag 1, när vi pratar om moln lösningar. Säkerhet ska inte vara en sak vi ska komma ihåg att göra, men en integerat del av alt vi gör.

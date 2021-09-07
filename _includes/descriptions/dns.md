@@ -1,1 +1,0 @@
-Protokoll som är typ en stor telefon bok som gör det möjligt att navigera internet med läsbara namn

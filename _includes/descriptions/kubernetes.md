@@ -1,1 +1,0 @@
-Det (för tiden) mest populära system till att orkestrera containere 
