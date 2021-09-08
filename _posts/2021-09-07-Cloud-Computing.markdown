@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cloud Prizing"
+title:  "Cloud Computing"
 date:   2021-09-07 22:27:27 +0200
 categories: cloud
 ---
@@ -25,7 +25,8 @@ Well there are a lot of pros with cloud development:
   - IAAS (Infrastructure as a service) - the hardware and VMs are provided. Commonly used by IT-administrators.
   - PAAS (Platform as a service) - additional to whats provided by IAAS you also get an additional layer of softwares provided: OS, Middleware, Runtime. Good for software developer teams.
   - SAAS (Software as a service) - is a fully provided software over the internet and as the above has no physical connection to any one device.
-  
+
+![service models](https://cdn2.hubspot.net/hubfs/99242/Blog_Images/as%20a%20service%20Models%20-%20Infographic.png "Service models")
 # Cost of cloud hosting:
 
 Provider | per month | per year
