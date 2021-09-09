@@ -1,24 +1,24 @@
-## Providers overview
-
+## Cloud Providers overview
+https://www.datamation.com/cloud/aws-vs-azure-vs-google-cloud/
 ### AWS
-- Focus on public cloud 1
-- Largest provider 1
+- Focus on public cloud
+- Largest provider
 - Global reach
 - Could be difficult to use with overwhelming options and complicated cost management
 ### Azure
-- Better on enterprise and hybrid cloud 1
-- Support for open source 1
-- Broad feature set 1
-- Incomplete management tooling 1
+- Better on enterprise and hybrid cloud
+- Support for open source
+- Broad feature set
+- Incomplete management tooling
 ### Google Cloud
-- Industry leading tools deep learning and AI 1
-- Strong offering in containers 3
-- Designed for cloud native business 1
-- Commitment to open source and portability 1
-- Fewer features and services 1
+- Industry leading tools deep learning and AI
+- Strong offering in containers
+- Designed for cloud native business
+- Commitment to open source and portability
+- Fewer features and services
 
-Web hosting:
-aws.amazon.com
+# Web Hosting with Amazon
+https://aws.amazon.com/websites/
 
 "whatever CMS you like" Wordpress, Drupal, Joomla
 provides SDKs for platforms like Java, Ruby, PHP, Node.js and .Net.
@@ -46,8 +46,8 @@ includes:
 - SSD-based storage
 - data transfer
 - DNS management
-- static IP 
-  
+- static IP
+
 ## Single Page Web App Hosting
 As we know one load, backend data from API (Graph QL or REST), high performance.
 Best for:
@@ -63,15 +63,3 @@ Websites that have server-less backends.
 - Deploys with CDN (Content Delivery Network), Amazon CloudFront (increases speed with local cache)
 - Custom domain
 - feature branch deployments
-
-## Simple static Website Hosting
-**Amazon S3**
-
-1
-https://www.datamation.com/cloud/aws-vs-azure-vs-google-cloud/
-2
-https://en.wikipedia.org/wiki/Amazon_Web_Services
-3
-Gartner
-4
-https://aws.amazon.com/websites/
