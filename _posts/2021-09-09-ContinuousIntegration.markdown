@@ -12,9 +12,9 @@ categories: cloud
 *Marko Anastasov , co-founder of Semaphore*
 
 ## Assignment
-*Implement a CI-pipeline with a GiHub Action workflow in a .NET git repo.*
+*Implement a CI-pipeline with a GiHub Action workflow, using a .NET application (on GitHub).*
 
-### Repo
+### Project files overview
 ```shell
 ├── .github
 │   └── workflows
