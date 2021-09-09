@@ -57,7 +57,7 @@ categories: cloud
 ## CI/CD Pipeline
 ![Image](https://wpblog.semaphoreci.com/wp-content/uploads/2020/11/ci-and-delivery-pipeline-1024x943.png)
 
-The above image describes the steps from new code til deployment. The idea is to automate every possible step along "the pipe" so that the software can have many small releases that all can be tracked and tested under version control. ***The part of the pipe mapped to Continuous integration is the CI-pipe and this is what the assignment is about.***
+The above image describes the steps from new code til deployment. The idea is to automate every possible step along "the pipe" so that the software can have many small releases that all can be tracked and tested under version control. ***The part of the pipe mapped to Continuous integration is the CI-pipe and this is what the assignment is about.*** A CI-pipe builds the source and takes it through a series of tests, before final compilation to a production ready deployable app.
 ## GitHub Actions
   GitHub Actions is event driven code/macro/script that executes on a remote server *inside the given GitHub repo*. You configure the Action inside a yaml-file under .github/workflows directory (See following source).
   
