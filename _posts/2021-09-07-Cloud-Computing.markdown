@@ -17,7 +17,7 @@ Well there are a lot of pros with cloud development:
 
 # Models of Cloud Computing
 - Deployment Model:
-  - Public Cloud: Accessed on the public internet and services are hosted on public cloud providers like: Microsoft Azure, Amazon Web Services (AWS), Google Cloud
+  - Public Cloud: Accessed on the public internet and services are hosted on public cloud providers like: Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform
   - Private Cloud: Services not hosted on the public internet but mostly within an organization.
   - Hybrid Cloud: Use of services both in the public cloud and in the private cloud.
   
@@ -27,7 +27,11 @@ Well there are a lot of pros with cloud development:
   - SAAS (Software as a service) - is a fully provided software over the internet and as the above has no physical connection to any one device.
 
 ![service models](https://cdn2.hubspot.net/hubfs/99242/Blog_Images/as%20a%20service%20Models%20-%20Infographic.png "Service models")
-# Cost of cloud hosting:
+
+# Cloud Service Providers
+
+The three biggest cloud providers are as mentioned above Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform (GCP), but what is the difference?
+# Cost of hosting of a virtual server in the cloud:
 
 Provider | per month | per year
 Microsoft Azure | $ 1,130 | $ 13,560
@@ -37,3 +41,6 @@ Google Cloud | $ 122 | $ 1,464
 # Sources
 Nice short video about cloud computing:\
 https://www.youtube.com/watch?v=M988_fsOSWo&t=139
+
+14 minute video comparing cloud service providers\
+https://www.youtube.com/watch?v=nrqmYvjHHJg
