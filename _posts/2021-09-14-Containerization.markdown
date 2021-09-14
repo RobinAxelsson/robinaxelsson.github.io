@@ -82,7 +82,7 @@ services:
 ```
 
 ### GitHub Pipeline
-![image actions](img/ghactions2.png)
+![image actions](/img/ghactions2.png)
 
 ### Secrets
 When it comes to using tokens, we can predefine token-variables on GitHub that is available to the GitAction Runner.
