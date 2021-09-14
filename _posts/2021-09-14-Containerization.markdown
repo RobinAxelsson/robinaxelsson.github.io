@@ -67,16 +67,27 @@ Docker compose is a configuration file that simplify the creation of an image fr
 ```shell
 docker-compose up
 ```
+This helps the automation of the image build but also shows intent of the developer. Following yaml is from the repos docker-compose.yml
 ```yml
-# content of docker-compose.yml
 version: "3.4"
 
 services:
   asphelloworlddocker:
     image: asphelloworlddocker
     build:
-      context: .
-      dockerfile: ./Dockerfile
+      context: . # this states the directory of compose-file
+      dockerfile: ./Dockerfile # path to Dockerfile
     ports:
-      - 5000:5000
+      - 8080:5000
+```
+
+### GitHub Pipeline
+
+
+### Secrets
+When it comes to using tokens, we can predefine token-variables on GitHub that is available to the GitAction Runner.
+To protect them from entering logs and even being visual on screen I added the token inside my macOS keychain that needs an elevated password to retrieve them. I retrieve them to clipboard and pipe them as standard input to the command I need.
+```shell
+pbpaste | docker login ghcr.io --username <github-user-name> --password-stdin
+# macOS command pbpaste pipes what contained in clipboard to std.in to next command
 ```
