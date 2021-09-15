@@ -82,9 +82,64 @@ services:
 ```
 
 ### GitHub Pipeline
-![image actions](/img/ghactions2.png)
+In this project I have based the workflow on the docker-publish.yml which is one of the GitHub [starter-workflows.](https://github.com/actions/starter-workflows/blob/dda42cb8f2514b6ee4e8cc0a860512821ffaa9f7/ci/docker-publish.yml)
+Its good to note that there are a lot of workflows to use for different scenarios and it is probably most efficient to start off with a given workflow/action. If you're looking for a workflow, search on the GitHub [Marketplace](https://github.com/marketplace?type=actions) where you can find all kinds.
+
+```yaml
+name: Docker-Modified
+# Simplified the event trigger to on push
+on:
+  push
+env:
+  REGISTRY: ghcr.io # A container registry by github
+  IMAGE_NAME: ${ { github.repository } } # Repository name variable
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Login against a Docker registry
+      # https://github.com/docker/login-action # the repo for the action
+      - name: Log into registry ${ { env.REGISTRY } }
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
+        with:
+          registry: ${ { env.REGISTRY } }
+          username: ${ { github.actor } }
+          password: ${ { secrets.ASP_NET_DOCKER } }
+
+      # Extract metadata (tags, labels) for Docker
+      # https://github.com/docker/metadata-action
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+        with:
+          images: ${ { env.REGISTRY } }/${ { env.IMAGE_NAME } }
+
+      # https://github.com/docker/build-push-action
+      - name: Build and push Docker image
+        # uses keyword points to another workflow inside a github repository
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          # inparameters for the external workflow (defined in the repo action.yml file)
+          context: .
+          push: ${ { github.event_name != 'pull_request' } }
+          tags: ${ { steps.meta.outputs.tags } }
+          labels: ${ { steps.meta.outputs.labels } }
+```
+
 
 ### Secrets
+![action secrets](/img/action-secrets.png)\
+\
 When it comes to using tokens, we can predefine token-variables on GitHub that is available to the GitAction Runner.
 To protect them from entering logs and even being visual on screen I added the token inside my macOS keychain that needs an elevated password to retrieve them. I retrieve them to clipboard and pipe them as standard input to the command I need.
 ```shell
