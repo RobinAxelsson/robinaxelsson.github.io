@@ -114,7 +114,7 @@ jobs:
         with:
           registry: ${ { env.REGISTRY } }
           username: ${ { github.actor } }
-          password: ${ { secrets.ASP_NET_DOCKER } }
+          password: ${ { secrets.ASP_NET_DOCKER } } # see secrets below
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
@@ -138,10 +138,20 @@ jobs:
 
 
 ### Secrets
+In the yaml above we have a few variables that hides secrets and tokens. For example:
+```yaml
+password: ${ { secrets.ASP_NET_DOCKER } }
+```
+This secret variable is stored inside the repository on GitHub and can be added through Repository -> Settings -> Secrets -> New Repository secret.
 ![action secrets](/img/action-secrets.png)\
 \
-When it comes to using tokens, we can predefine token-variables on GitHub that is available to the GitAction Runner.
-To protect them from entering logs and even being visual on screen I added the token inside my macOS keychain that needs an elevated password to retrieve them. I retrieve them to clipboard and pipe them as standard input to the command I need.
+But we also need to generate them ourselves through our personal GitHub profile -> settings -> developer settings -> personal access token -> New personal access token.
+![new token](/img/new-PAT.png)
+For publishing a container to the GitHub Registry we need to create a token that has write:packages Scope.
+
+### Handling tokens
+
+To protect the secrets from entering logs and even being visual on screen I added the token inside my macOS keychain that needs an elevated password to retrieve them. I retrieve them to clipboard and pipe them as standard input to the command like below.
 ```shell
 pbpaste | docker login ghcr.io --username <github-user-name> --password-stdin
 # macOS command pbpaste pipes what contained in clipboard to std.in to next command
