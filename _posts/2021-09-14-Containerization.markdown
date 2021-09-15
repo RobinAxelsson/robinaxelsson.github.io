@@ -5,8 +5,14 @@ date:   2021-09-14 19:00:00 +0200
 categories: cloud
 ---
 
-## In this Post we will use docker and GitHub to containerize an ASP.NET Hello World app
+## In this post we will use docker and GitHub to containerize an ASP.NET Hello World app
 
+### What is a container?
+A container is an application packaged with its own runtime environment. Like a shipping container it is standardized and modular to scale and be reused and shipped easily. Compared to virtual machines a container doesn't virtualize hardware and allocates memory, a container is therefor more flexible and more lightweight. Instead of an hypervisor the container runs by a container engine/runtime and is built from an container-image which in turn is built from an manifest file (in our case the Dockerfile).
+
+Note that even if the containers have an isolated environment you can open and map ports (in the same sense as you open ports with any OS) for communicating with the outside environment. As a side note you can even bash into an containers command-line from the host machine.
+
+There are a few different container technologies but for this assignment Docker is used.
 ### System:
 - MacOS Big Sur Version 11.5.2
 - Visual Studio Code
@@ -142,17 +148,21 @@ In the yaml above we have a few variables that hides secrets and tokens. For exa
 ```yaml
 password: ${ { secrets.ASP_NET_DOCKER } }
 ```
-This secret variable is stored inside the repository on GitHub and can be added through Repository -> Settings -> Secrets -> New Repository secret.
+This secret variable is stored inside the repository on GitHub and can be added through Repository -> Settings -> Secrets -> New Repository secret.\
 ![action secrets](/img/action-secrets.png)\
 \
 But we also need to generate them ourselves through our personal GitHub profile -> settings -> developer settings -> personal access token -> New personal access token.
-![new token](/img/new-PAT.png)
+![new token](/img/new-PAT.png)\
+\
 For publishing a container to the GitHub Registry we need to create a token that has write:packages Scope.
 
-### Handling tokens
+### Handling Tokens
 
 To protect the secrets from entering logs and even being visual on screen I added the token inside my macOS keychain that needs an elevated password to retrieve them. I retrieve them to clipboard and pipe them as standard input to the command like below.
 ```shell
 pbpaste | docker login ghcr.io --username <github-user-name> --password-stdin
 # macOS command pbpaste pipes what contained in clipboard to std.in to next command
 ```
+# References
+[WTF is a container?](https://techcrunch.com/2016/10/16/wtf-is-a-container/?guce_referrer=aHR0cHM6Ly9wZ2JzbmgyMC5naXRodWIuaW8v&guce_referrer_sig=AQAAAE6RaDv_1OocX76Tu6g7PpP7pCYnRZMJvmn8zEaUt7OAQySmUMUY19J2WZPbFKkhbpuFfFAjl32XfEA2k7opGhEKChxV2hw0Y_PtcJqYB6bPXRqqKqKo3ddG3JpgDJpwSWsBJTJ3WpQDPqMFpfzPs2sNofI1Q6la2cr20IeU6Y1f) Article, 4 min\
+[Containerization Explained](https://www.youtube.com/watch?v=0qotVMX-J5s) video, 8 min
