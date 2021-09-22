@@ -236,6 +236,9 @@ It should look like below and is added to repo secrets.AZURE_RBAC_CREDENTIALS.
   "tenantId": "<GUID>",
   (...)}
 ```
+### Final Git Pipeline
+![final pipeline](/img/final-action-function.png)\
+All 16 tests passed, great!
 ### Security
 Serverless apps and functions has the same vulnerabilities as other code connected to the internet. I think that the validation of input data and being extra careful with credentials is whats applicable to this assignment.
 # References
