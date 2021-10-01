@@ -22,7 +22,7 @@ Deadlines
 04|
 05|--- Assignment Monitorering av molnapplikationer 23:55 (maybe next day)
 06|
-07|--- Assignment Skaling, upp och ut 23:55 (maybe next day)
+07|--- Assignment Skalning, upp och ut 23:55 (maybe next day)
 08|
 09|⛵
 10|⛵
