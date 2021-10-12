@@ -1,18 +1,26 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
+![profile](/img/profile.png)
+# Robin Axelsson
+I am a 30 year old .NET student who has studied and worked in a lot of different fields. I love to find out new creative and efficient ways to solve problems and thats why I love writing code. Jobs I have done is Design Engineer, Sailing Instructor, Boat Builder and more. Feel free to check out my GitHub page or LinkedIn.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+GitHub: 
+[https://github.com/RobinAxelsson](https://github.com/RobinAxelsson)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+LinkedIn: 
+[https://www.linkedin.com/in/axelsson-robin/](https://www.linkedin.com/in/axelsson-robin/)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+![th](/img/th.png)
+![net](/img/net.png)
+![csharp](/img/csharp.png)
 
+![py](/img/py.png)
+![js](/img/js.png)
+![catia](/img/catia.png)
 
-[jekyll-organization]: https://github.com/jekyll
+![bash](/img/bash.png)
+![vscode](/img/vscode.png)
+![visual-studio](/img/visual-studio.png)
