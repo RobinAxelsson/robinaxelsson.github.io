@@ -147,26 +147,23 @@ else
     opt.BlobNames.ToList().ForEach(name => container.DeleteBlob(name));
 ```
 ### Data Flow
-![data-flow](/img/data-flow.png)
+![blobflow](/img/blobflow.png)
 
 The data flow is very simple in this application - and that is intended. With a fully automatable console app you can do CRUD operations at any scale you like.
 
 ### Pricing an app that reads and writes files in Azure?
 But if you want to host images and view them at a web page as well, for instance a page similar to [Shutterstock.](https://www.shutterstock.com/)
 
-I am using the [Azure Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) and making some assumptions about the site and the traffic.
+I am using the [Azure Calculator](https://azure.microsoft.com/en-us/pricing/calculator/) and making some assumptions about the site and the traffic.\
+![price](/img/price.png)
 
-|Service type    |Custom name|Region                     |Description                                                                                                                                                                                                                                                                                                                                                                   |Estimated monthly cost             |Estimated upfront cost|
-|----------------|-----------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|----------------------|
-|App Service     |           |West US                    |Basic Tier; 2 B1 (1 Core(s), 1.75 GB RAM, 10 GB Storage) x 730 Hours; Windows OS                                                                                                                                                                                                                                                                                              |109.5                              |0                     |
-|Storage Accounts|           |West US                    |Block Blob Storage, General Purpose V2, LRS Redundancy, Hot Access Tier, 100 TB Capacity - Pay as you go, 10 x 10,000 Write operations, 10 x 10,000 List and Create Container Operations, 10 x 10,000 Read operations, 100,000 Archive High Priority Read, 1 x 10,000 Other operations. 1,000 GB Data Retrieval, 1,000 GB Archive High Priority Retrieval, 1,000 GB Data Write|2088.47                            |0                     |
-|App Service     |           |Germany Central (Sovereign)|Basic Tier; 2 B1 (1 Core(s), 1.75 GB RAM, 10 GB Storage) x 730 Hours; Windows OS                                                                                                                                                                                                                                                                                              |125.56                             |0                     |
-|Storage Accounts|           |Germany Central (Sovereign)|Block Blob Storage, General Purpose V2, LRS Redundancy, Hot Access Tier, 100 TB Capacity - Pay as you go, 10 x 10,000 Write operations, 10 x 10,000 List and Create Container Operations, 10 x 10,000 Read operations, 100,000 Archive High Priority Read, 1 x 10,000 Other operations. 1,000 GB Data Retrieval, 1,000 GB Archive High Priority Retrieval, 1,000 GB Data Write|2108.5926                          |0                     |
-|Support         |           |                           |Support                                                                                                                                                                                                                                                                                                                                                                       |0                                  |0                     |
-|                |           |                           |Licensing Program                                                                                                                                                                                                                                                                                                                                                             |Microsoft Online Services Agreement|                      |
-|                |           |                           |Total                                                                                                                                                                                                                                                                                                                                                                         |4432.1226                          |0                     |
 
-My assumption is we need minimum two regions to cover Europe and the Americas (which probably is to modest) with one big storage of 100TB on each.
+### Securing Data
+Microsoft has a default that user data is not accessible for anyone else then the user. Always uses the least privilege thats is required and no administrator accounts in VMs. [Docs](https://docs.microsoft.com/en-us/azure/security/fundamentals/protection-customer-data)\
+Everything is encrypted and backed up which is actually the easy part. The harder part is to protect the keys that we use to access the encrypted data in the cloud. Azure KeyVault helps us to store configuration variables in the cloud and on disc they provide dotnet user-secrets that is used in this project (and default in ASP.NET).
+
+### Final
+I like this way of storing data, we should have all our data this way and have apps to request the data from us.
 
 ### References
 [https://github.com/commandlineparser/commandline#command-line-parser-library-for-clr-and-netstandard](https://github.com/commandlineparser/commandline#command-line-parser-library-for-clr-and-netstandard)
