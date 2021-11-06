@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blobs in the clouds"
-date:   2021-09-29 11:00:00 +0200
+date:   2021-10-01 11:00:00 +0200
 categories: cloud, network
 ---
 
